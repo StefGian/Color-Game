@@ -1,10 +1,12 @@
 body {
   background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir", "Arial";
 }
 
 #container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .square {
@@ -13,10 +15,19 @@ body {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border-radius: 15%;
+  transition: background-color 0.5s;
 }
 
 h1 {
   color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  padding: 20px 0;
+  line-height: 1.1;
 }
 
 #stripe {
@@ -28,4 +39,30 @@ h1 {
 
 .selected {
   background-color: blue;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: steelblue;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
 }
